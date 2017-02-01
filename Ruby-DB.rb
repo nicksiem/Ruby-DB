@@ -11,4 +11,3 @@ print "Scrabled word is..."
 for j in letters.shuffle
     print j
 end
-puts "!"
