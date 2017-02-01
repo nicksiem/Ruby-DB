@@ -1,5 +1,14 @@
-# week 3 discussion board program to flip a word
-print "Enter a word to be flipped: "
-word = gets.chomp
-new_word = word.reverse
-puts "The word '#{word}' flipped is: #{new_word}"
+# Nick Siemiawski
+# Program to scramble an entered word
+
+print "Enter a word to be scrambled: "
+word = gets.chomp.split("")
+letters = []
+for i in word
+    letters << i
+end
+print "Scrabled word is..."
+for j in letters.shuffle
+    print j
+end
+puts "!"
